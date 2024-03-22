@@ -27,15 +27,23 @@ export default async function page() {
                       blog.child_page?.title ||
                       ""}
                   </h2>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Posted on {new Date(blog.created_time).toLocaleDateString()}
-                  </p>
-                  <Link
-                    className="flex items-center space-x-2 font-medium hover:underline"
-                    href="#"
-                  >
-                    <div>Read more</div>
-                  </Link>
+                  {blog.child_page?.title && (
+                    <div>
+                      <p
+                        className="text-g
+                                      ray-500 dark:text-gray-400"
+                      >
+                        Posted on{" "}
+                        {new Date(blog.created_time).toLocaleDateString()}
+                      </p>
+                      <Link
+                        className="flex items-center space-x-2 font-medium hover:underline"
+                        href="#"
+                      >
+                        <div>Read more</div>
+                      </Link>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
