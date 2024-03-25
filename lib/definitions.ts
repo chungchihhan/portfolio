@@ -1,8 +1,3 @@
-// export type BlogsTable = {
-//   object: string;
-//   results:
-// }
-
 export type NotionResponse = {
   object: string;
   results: NotionBlock[];
