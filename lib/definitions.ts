@@ -36,6 +36,15 @@ export type NotionBlock = {
   child_page?: {
     title: string;
   };
+  quote?: {
+    rich_text: NotionRichText[];
+    color: string;
+  };
+  heading_1?: {
+    rich_text: NotionRichText[];
+    is_toggle: boolean;
+    color: string;
+  };
 };
 
 export type NotionRichText = {

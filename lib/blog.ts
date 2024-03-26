@@ -26,3 +26,27 @@ export async function getBlogs() {
     throw new Error("Error fetching blogs");
   }
 }
+
+export async function getBlog(blogId: string) {
+  const NOTION_API_KEY = process.env.NOTION_API_KEY; // Store your Notion API key in an environment variable
+  try {
+    const response = await fetch(
+      `https://api.notion.com/v1/blocks/${blogId}/children?page_size=100`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${NOTION_API_KEY}`,
+          "Notion-Version": "2022-06-28",
+        },
+        next: { revalidate: 10 },
+      }
+    );
+
+    const data: NotionResponse = await response.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Error fetching blogs");
+  }
+}
