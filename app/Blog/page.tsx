@@ -15,17 +15,17 @@ export default async function page() {
           Go back to Harry's portfolio
         </div>
       </Link>
-      <SectionHeading textSize="text-5xl">My Notion Blogs</SectionHeading>
-      <p className="text-gray-700 text-center animate-pulse text-lg mb-16 -mt-5">
+      <SectionHeading textSize="text-6xl">My Blogs</SectionHeading>
+      <p className="text-gray-700 text-center animate-pulse text-lg mb-10 -mt-5">
         Thoughts, experiences, and interests
       </p>
-      <div className="grid grid-cols-2 gap-5 px-20">
+      <div className="grid 2xl:grid-cols-2 lg:grid-cols-1 gap-5 px-2 lg:px-20">
         {blogs.results.map((blog) => (
           <div
             key={blog.id}
-            className="flex gap-3 p-8 items-center justify-between bg-white bg-opacity-60 rounded-3xl"
+            className="flex gap-3 p-8 items-center justify-between bg-white bg-opacity-60 rounded-3xl "
           >
-            <p className="text-4xl font-medium capitalize flex gap-3 items-center">
+            <p className="lg:text-3xl font-medium capitalize flex gap-3 items-center text-xl">
               <HiOutlineChevronDoubleRight className="opacity-50" />
               {/* {blog.paragraph?.rich_text[0]?.plain_text ||
               blog.child_page?.title ||
