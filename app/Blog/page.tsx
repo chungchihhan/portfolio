@@ -19,7 +19,7 @@ export default async function page() {
       <p className="text-gray-700 text-center animate-pulse text-lg mb-10 -mt-5">
         Thoughts, experiences, and interests
       </p>
-      <div className="grid 2xl:grid-cols-2 lg:grid-cols-1 gap-5 px-2 lg:px-20">
+      <div className="grid 2xl:grid-cols-2 lg:grid-cols-1 gap-5 px-2 lg:px-20 ">
         {blogs.results.map((blog) => (
           <div
             key={blog.id}
@@ -37,12 +37,18 @@ export default async function page() {
                 <p className="">
                   Posted on {new Date(blog.created_time).toLocaleDateString()}
                 </p>
-                <Link
+                {/* <Link
                   className="flex items-center space-x-2 font-medium hover:underline"
                   href={`https://plausible-firefly-af5.notion.site/${blog.child_page?.title.replace(
                     /\s+/g,
                     "-"
                   )}-${blog.id}`}
+                >
+                  Read more
+                </Link> */}
+                <Link
+                  className="flex items-center space-x-2 font-medium hover:underline"
+                  href={{ pathname: `/Blog/${blog.id}` }}
                 >
                   Read more
                 </Link>
