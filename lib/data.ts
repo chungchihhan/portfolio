@@ -1,6 +1,7 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { GiEarthAmerica } from "react-icons/gi";
+import { FaAws } from "react-icons/fa";
+import { LuBrainCircuit } from "react-icons/lu";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
@@ -35,28 +36,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Overseas Internship Program",
+    location: "New Mexico, America",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Participated in LEWIS project at the University of New Mexico, USA, designed high-efficiency wireless smart sensors at low cost, and taught local children to assemble their own Arduino sensors",
+    icon: React.createElement(GiEarthAmerica),
+    date: "Jul 2022 – Aug 2022",
+  },
+  {
+    title: "Bachelor, National Taiwain University",
+    location: "Taipei, Taiwan",
+    description:
+      "Graduated from NTU after 4 years of studying. I double majored in mechanical engineering and bioenvironmental systems engineering.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jun 2019 -  Sep 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "AI Application Service Intern",
+    location: "Chunghwa Telecom Co., Ltd.",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I am working on LLM application, including using DSPy to improve prompting and combining Neo4j as a knowledge graph to improve RAG answer accuracy.",
+    icon: React.createElement(LuBrainCircuit),
+    date: "Feb 2023 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "AWS Educate Ambassador",
+    location: "Amazon Web Services,Taiwan",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I'm now a AWS Educate Ambassador, hosting workshops and events to promote AWS services to students.",
+    icon: React.createElement(FaAws),
+    date: "March 2023 - present",
   },
 ] as const;
 
@@ -87,21 +96,17 @@ export const projectsData = [
 export const skillsData = [
   "HTML",
   "CSS",
-  "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
   "Node.js",
-  "Git",
+  "Github",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "DSPy",
+  "Langchain",
+  "LlamaIndex",
 ] as const;
