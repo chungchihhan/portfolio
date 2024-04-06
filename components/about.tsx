@@ -20,25 +20,24 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in National Taiwan University
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I dedicated in a coding course and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          Next.js, MERN, TailwindCSS, LlamaIndex and LangChain.
+        After graduating with a degree from{" "}
+        <span className="font-semibold italic">National Taiwan University</span>
+        , I am interested in programming.I started to learn web serviecs and
+        dedicated in{" "}
+        <span className="font-semibold italic">full-stack developement</span>.
+        What's more, I am also putting efforts to LLM, such as{" "}
+        <span className="font-semibold italic">Langchain</span> and{" "}
+        <span className="font-semibold italic">LlamaIndex.</span>{" "}
+        <span>
+          My favorite part of programming is the instant feedback I get right
+          after clicking on the ENTER button.
         </span>
       </p>
-
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy doing some
-        photography, playing basketball and watching movies. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">how to play a guitar.</span>
+        When I'm not coding, I enjoy doing some photography, playing basketball
+        and watching movies. I also enjoy learning new things. I am currently
+        building little applications using{" "}
+        <span className="font-semibold italic">AWS serviecs.</span>{" "}
       </p>
     </motion.section>
   );
