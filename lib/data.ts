@@ -4,8 +4,9 @@ import { FaAws } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import tindog from "@/public/tindog.png";
+import TsmcEats from "@/public/TsmcEats.png";
+import llamaindex from "@/public/llamaindex.png";
 
 export const links = [
   {
@@ -71,25 +72,42 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "LlamaIndex Chatbot",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A chatbot that can answer questions about the provided data. It is hosted on NAS using Docker and uploaded files are saved to NAS.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "LlamaIndex",
+      "Docker",
+      "NAS",
+    ],
+    imageUrl: llamaindex,
   },
   {
-    title: "rmtDev",
+    title: "TSMC Eats",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A food order website for employees of TSMC. It can handle 100 GET requests and 35 POST requests per second at the peak time.",
+    tags: ["MERN", "TypeScript", "Tailwind", "Azure", "Apache JMeter"],
+    imageUrl: TsmcEats,
   },
   {
-    title: "Word Analytics",
+    title: "Tindog",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A public web app for dogs dating. It identifies the dogs in the photo and allows successful matches to chat.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Neon",
+      "Tailwind",
+      "Edge Store",
+      "ONNX",
+      "PyTorch",
+    ],
+    imageUrl: tindog,
   },
 ] as const;
 
