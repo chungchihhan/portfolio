@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import SectionHeading from "@/components/section-heading";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useActiveSectionContex } from "@/context/active-section-context";
+// import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
@@ -22,7 +22,7 @@ export default function About() {
       <p className="mb-3">
         After graduating with a bachelor degree of{" "}
         <span className="font-semibold italic">National Taiwan University</span>
-        , I am interested in programming.I started to learn web serviecs and
+        , I am interested in programming.I started to learn web services and
         dedicated in{" "}
         <span className="font-semibold italic">full-stack developement</span>.
         What's more, I am also putting efforts to LLM, such as{" "}
@@ -34,7 +34,7 @@ export default function About() {
         </span>
       </p>
       <p>
-        When I'm not coding, I enjoy doing some photography, playing basketball
+        When I am not coding, I enjoy doing some photography, playing basketball
         and watching movies. I also enjoy learning new things. I am currently
         building little applications using{" "}
         <span className="font-semibold italic">AWS serviecs.</span>{" "}
