@@ -7,7 +7,7 @@ export default function Footer() {
         &copy; 2024 Harry Chung. All rights reserved.
       </small>
       <p className="text-xs">
-        <span className="font-semibold">About this website:</span>
+        <span className="font-semibold">About this website: </span>
         built with Next.js, Tailwind CSS, Framer Motion, TypeScript, React Email
         and Resend, hosted on Vercel.
       </p>
