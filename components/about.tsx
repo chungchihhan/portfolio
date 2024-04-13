@@ -25,7 +25,7 @@ export default function About() {
         , I am interested in programming.I started to learn web services and
         dedicated in{" "}
         <span className="font-semibold italic">full-stack developement</span>.
-        What's more, I am also putting efforts to LLM, such as{" "}
+        What&apos;s more, I am also putting efforts to LLM, such as{" "}
         <span className="font-semibold italic">Langchain</span> and{" "}
         <span className="font-semibold italic">LlamaIndex.</span>{" "}
         <span>
