@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContex } from "@/context/active-section-context";
 
@@ -27,7 +27,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.5 }}
           >
             <Image
-              src="/ryujin.jpg"
+              src="/profile_photo.jpg"
               alt="ryujin portrait"
               width="192"
               height="192"
@@ -86,15 +86,15 @@ export default function Intro() {
         </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer"
-          href=""
+          href="https://www.linkedin.com/in/chih-han-chung-943950268/"
         >
           <BsLinkedin />
         </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  text-[1.35rem] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text=gray-950"
-          href=""
+          href="https://medium.com/@harryup2000"
         >
-          <FaGithubSquare />
+          <FaMedium />
         </a>
       </motion.div>
     </section>

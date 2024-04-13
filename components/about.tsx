@@ -35,8 +35,7 @@ export default function About() {
       </p>
       <p>
         When I am not coding, I enjoy doing some photography, playing basketball
-        and watching movies. I also enjoy learning new things. I am currently
-        building little applications using{" "}
+        and watching movies. I am currently building little applications using{" "}
         <span className="font-semibold italic">AWS serviecs.</span>{" "}
       </p>
     </motion.section>
