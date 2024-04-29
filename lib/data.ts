@@ -7,6 +7,8 @@ import corpcommentImg from "@/public/corpcomment.png";
 import tindog from "@/public/tindog.png";
 import TsmcEats from "@/public/TsmcEats.png";
 import llamaindex from "@/public/llamaindex.png";
+import PikachuEmoji from "@/public/blogs-images/PikachuEmoji.gif";
+import PokemonMasterBackground from "@/public/blogs-images/PokemonMasterBackground.png";
 
 export const links = [
   {
@@ -20,6 +22,10 @@ export const links = [
   {
     name: "Projects",
     hash: "#projects",
+  },
+  {
+    name: "Blogs",
+    hash: "#blogs",
   },
   {
     name: "Skills",
@@ -108,6 +114,24 @@ export const projectsData = [
       "PyTorch",
     ],
     imageUrl: tindog,
+  },
+] as const;
+
+export const blogsData = [
+  {
+    title: "Unboxing AWS Bedrock",
+    description: "今天要來開箱AWS 的一個強大功能，也就是AWS Bedrock ! ",
+    emoji: "🪨",
+    bg_pic: PokemonMasterBackground,
+    url: "https://plausible-firefly-af5.notion.site/Unboxing-AWS-Bedrock-ba58e9a66fc24764a54c3686ad15f3cb",
+  },
+  {
+    title: "Pokémon Master養成記: 以 AWS Lambda & DynamoDB 打造寶可夢搜尋網頁",
+    description: "guiding you to build a web to interact with all the Pokemons.",
+    // emoji: PikachuEmoji,
+    emoji: "🧠",
+    bg_pic: PokemonMasterBackground,
+    url: "https://www.notion.so/Pok-mon-Master-AWS-Lambda-DynamoDB-dd2357fd85af450db5551fd1f4420591",
   },
 ] as const;
 
