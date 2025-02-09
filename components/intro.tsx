@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsLinkedin, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaMedium } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
@@ -83,6 +83,12 @@ export default function Intro() {
         >
           Download CV{" "}
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition" />
+        </a>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer"
+          href="https://github.com/chungchihhan/"
+        >
+          <BsGithub />
         </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer"
