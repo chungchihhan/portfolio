@@ -27,13 +27,13 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.5 }}
           >
             <Image
-              src="/profile_photo.jpg"
-              alt="ryujin portrait"
-              width="192"
-              height="192"
-              quality="95"
+              src="/profile_photo2.jpg"
+              alt="chih-han"
+              width="250"
+              height="250"
+              quality="100"
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              className="h-48 w-48 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             ></Image>
           </motion.div>
           <motion.span
