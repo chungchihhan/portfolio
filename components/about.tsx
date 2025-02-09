@@ -21,7 +21,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a bachelor's degree from{" "}
+        After graduating with a bachelor&apos;s degree from{" "}
         <span className="font-semibold italic">National Taiwan University</span>
         , I developed an interest in programming. I began learning about cloud
         and web services, dedicating myself to{" "}
