@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 // import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
+import { Span } from "next/dist/trace";
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.75);
@@ -20,23 +21,33 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a bachelor degree of{" "}
+        After graduating with a bachelor's degree from{" "}
         <span className="font-semibold italic">National Taiwan University</span>
-        , I am interested in programming.I started to learn web services and
-        dedicated in{" "}
-        <span className="font-semibold italic">full-stack developement</span>.
-        What&apos;s more, I am also putting efforts to LLM, such as{" "}
-        <span className="font-semibold italic">Langchain</span> and{" "}
-        <span className="font-semibold italic">LlamaIndex.</span>{" "}
+        , I developed an interest in programming. I began learning about cloud
+        and web services, dedicating myself to{" "}
+        <span className="font-semibold italic">
+          cloud and full-stack development
+        </span>
+        . I have worked on projects utilizing various AWS services such as{" "}
+        <span className="font-semibold italic">
+          Lambda, API Gateway, S3, CloudFront, and DynamoDB
+        </span>
+        . Additionally, I have gained experience with Infrastructure as Code
+        (IaC) tools like{" "}
+        <span className="font-semibold italic">Terraform. </span>
         <span>
-          My favorite part of programming is the instant feedback I get right
-          after clicking on the ENTER button.
+          My favorite aspect of programming is the immediate feedback I receive
+          right after pressing the ENTER key.
         </span>
       </p>
       <p>
-        When I am not coding, I enjoy doing some photography, playing basketball
-        and watching movies. I am currently building little applications using{" "}
-        <span className="font-semibold italic">AWS serviecs.</span>{" "}
+        I have experience in <span className="font-semibold italic">Agile</span>{" "}
+        environments, participating in{" "}
+        <span className="font-semibold italic">
+          sprint planning, sprint reviews, and retrospectives
+        </span>
+        . This has improved my collaboration, communication skills, and ability
+        to adapt to changing requirements.
       </p>
     </motion.section>
   );
