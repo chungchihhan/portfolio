@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 // import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
-import { Span } from "next/dist/trace";
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.75);
