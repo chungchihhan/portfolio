@@ -55,13 +55,11 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item }) => {
       >
         <h3 className="font-semibold underline">{item.title}</h3>
 
-        <div className="font-normal text-gray-500 !mt-0 flex items-center">
-          <MdOutlineLocationOn />
+        <div className="font-normal text-gray-500 !mt-1 flex items-center text-xs">
+          <MdOutlineLocationOn size={16} />
           {item.location}
         </div>
-        <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-          {item.description}
-        </p>
+        <p className="!mt-1 !font-normal text-gray-700">{item.description}</p>
       </VerticalTimelineElement>
     </div>
   );
