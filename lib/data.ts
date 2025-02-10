@@ -3,6 +3,7 @@ import { GiEarthAmerica } from "react-icons/gi";
 import { FaAws } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { LuGraduationCap } from "react-icons/lu";
+import { BiServer } from "react-icons/bi";
 import corpcommentImg from "@/public/corpcomment.png";
 import tindog from "@/public/tindog.png";
 import TsmcEats from "@/public/TsmcEats.png";
@@ -53,20 +54,44 @@ export const experiencesData = [
     date: "Jun 2019 -  Sep 2023",
   },
   {
-    title: "AI Application Service Intern",
-    location: "Chunghwa Telecom Co., Ltd.",
+    title: "Master, National Taiwain University",
+    location: "Taipei, Taiwan",
     description:
-      "I am working on LLM application, including using DSPy to improve prompting and combining Neo4j as a knowledge graph to improve RAG answer accuracy.",
-    icon: React.createElement(LuBrainCircuit),
-    date: "Feb 2023 - Present",
+      "Major in mechanical engineering, and dedicated into generative AI and retrieval augmented generation.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep 2023 -  Present",
   },
   {
-    title: "AWS Educate Ambassador",
-    location: "Amazon Web Services,Taiwan",
+    title: "AI Application Service Intern",
+    location: "Chunghwa Telecom, Taiwan",
     description:
-      "I'm now a AWS Educate Ambassador, hosting workshops and events to promote AWS services to students.",
+      "Researching prompt engineering with DSPy and enhancing RAG accuracy by integrating Knowledge Graph with Neo4j and LangChain.",
+    icon: React.createElement(LuBrainCircuit),
+    date: "Feb 2024 - June 2024",
+  },
+  {
+    title: "Cloud Engineer Intern",
+    location: "eCloudvalley, Taiwan",
+    description:
+      "Deployed MediaTek DaVinci scripts and the full MVP2 platform using IaC tools, optimizing infrastructure with automated deployment for networking, security, and cloud services.",
+    icon: React.createElement(BiServer),
+    date: "Jul 2024 - Oct 2024",
+  },
+  {
+    title: "6th AWS Educate Ambassador Technical Support",
+    location: "Amazon Web Services, Taiwan",
+    description:
+      "Developed an interactive Pokémon web app using AWS services and launched a psychological test on AWS, attracting 7,000+ users in 17 days.",
     icon: React.createElement(FaAws),
-    date: "March 2023 - present",
+    date: "March 2024 - Nov 2024",
+  },
+  {
+    title: "7th AWS Educate Ambassador Technical Support",
+    location: "Amazon Web Services, Taiwan",
+    description:
+      "Using microservices to create a fully serverless email system (TPET) for only $15, reducing workload by up to 80%.",
+    icon: React.createElement(FaAws),
+    date: "Jan 2025 - present",
   },
 ] as const;
 
