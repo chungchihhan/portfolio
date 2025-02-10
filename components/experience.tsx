@@ -35,9 +35,10 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item }) => {
       <VerticalTimelineElement
         visible={inView}
         contentStyle={{
-          background: "#f3f4f6",
+          background: "#fff",
           boxShadow: "none",
           border: "1px solid rgba(0, 0, 0, 0.05)",
+          borderRadius: "0.5rem",
           textAlign: "left",
           padding: "1.3rem 2rem",
         }}
