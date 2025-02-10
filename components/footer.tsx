@@ -6,11 +6,6 @@ export default function Footer() {
       <small className="mb-2 text-xs block">
         &copy; 2025 Chih-han Chung. All rights reserved.
       </small>
-      <p className="text-xs">
-        <span className="font-semibold">About this website: </span>
-        built with Next.js, Tailwind CSS, Framer Motion, TypeScript, React Email
-        and Resend, hosted on Vercel.
-      </p>
     </footer>
   );
 }
