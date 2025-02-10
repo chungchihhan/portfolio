@@ -84,24 +84,26 @@ export default function Intro() {
           Download CV{" "}
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer"
-          href="https://github.com/chungchihhan/"
-        >
-          <BsGithub />
-        </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer"
-          href="https://www.linkedin.com/in/chih-han-chung-943950268/"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full  text-[1.35rem] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text=gray-950"
-          href="https://medium.com/@harryup2000"
-        >
-          <FaMedium />
-        </a>
+        <div className="flex gap-2">
+          <a
+            className="bg-white p-4 text-gray-700 flex justify-center items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer"
+            href="https://github.com/chungchihhan/"
+          >
+            <BsGithub />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex justify-center items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition cursor-pointer"
+            href="https://www.linkedin.com/in/chih-han-chung-943950268/"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex justify-center items-center gap-2 rounded-full  text-[1.35rem] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text=gray-950"
+            href="https://medium.com/@harryup2000"
+          >
+            <FaMedium />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
