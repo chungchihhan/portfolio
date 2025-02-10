@@ -112,19 +112,17 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Python",
+  "TypeScript",
+  "AWS",
+  "Terraform",
   "HTML",
   "CSS",
-  "TypeScript",
   "React",
   "Next.js",
+  "Tailwind",
+  "Docker",
   "Node.js",
   "Github",
-  "Tailwind",
-  "MongoDB",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "DSPy",
   "Langchain",
-  "LlamaIndex",
 ] as const;
