@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import SectionHeading from "@/components/section-heading";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 // import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -19,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-3 text-pretty">
         After graduating with a bachelor&apos;s degree from{" "}
         <span className="font-semibold italic">National Taiwan University</span>
         , I developed an interest in programming. I began learning about cloud

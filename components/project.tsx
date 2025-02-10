@@ -4,13 +4,7 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
-
-// type ProjectsProps = {
-//   title: string;
-//   description: string;
-//   tags: string[];
-//   imageUrl: string;
-// };
+import { useSectionInView } from "@/lib/hooks";
 
 type ProjectsProps = (typeof projectsData)[number];
 
@@ -20,9 +14,13 @@ export default function Project({
   tags,
   imageUrl,
 }: ProjectsProps) {
-  const ref = useRef<HTMLDivElement>(null);
+  // const ref = useRef<HTMLDivElement>(null);
+  const { ref } = useSectionInView("Projects", 0.75); // Pass the title as section name to the hook
+
+  const sectionRef = useRef<HTMLDivElement>(null);
+
   const { scrollYProgress } = useScroll({
-    target: ref,
+    target: sectionRef,
     offset: ["0 1 ", "1.33 1"],
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
