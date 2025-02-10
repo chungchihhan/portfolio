@@ -4,7 +4,9 @@ import { FaAws } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { LuGraduationCap } from "react-icons/lu";
 import { BiServer } from "react-icons/bi";
-import corpcommentImg from "@/public/corpcomment.png";
+import gitvatar from "@/public/gitvatar.png";
+import psytest from "@/public/psytest.png";
+import tpet from "@/public/tpet.png";
 import tindog from "@/public/tindog.png";
 import TsmcEats from "@/public/TsmcEats.png";
 import llamaindex from "@/public/llamaindex.png";
@@ -96,6 +98,42 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "GitVatar",
+    description:
+      "A opensource project that reads the user's github repositories and generates a unique avatar.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "OAuth",
+      "Github API",
+      "OpenAI",
+    ],
+    imageUrl: gitvatar,
+  },
+  {
+    title: "AWS Psychological Test",
+    description:
+      "A psychological test that can analyze the personality and generates unique images based on the user's answers.",
+    tags: ["Lambda", "API Gateway", "DyanmoDB", "Bedrock", "S3", "CloudFront"],
+    imageUrl: psytest,
+  },
+  {
+    title: "TPET",
+    description:
+      "A fully serverless and microservice-based email system that can customize the email content and send it to the user automatically.",
+    tags: [
+      "Lambda",
+      "SQS",
+      "SES",
+      "DynamoDB",
+      "S3",
+      "CloudFront",
+      "API Gateway",
+    ],
+    imageUrl: tpet,
+  },
   {
     title: "LlamaIndex Chatbot",
     description:
