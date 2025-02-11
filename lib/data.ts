@@ -6,6 +6,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import { BiServer } from "react-icons/bi";
 import gitvatar from "@/public/gitvatar.png";
 import psytest from "@/public/psytest.png";
+import pokemonmaster from "@/public/pokemonmaster.png";
 import tpet from "@/public/tpet.png";
 import tindog from "@/public/tindog.png";
 import TsmcEats from "@/public/TsmcEats.png";
@@ -118,6 +119,13 @@ export const projectsData = [
       "A psychological test that can analyze the personality and generates unique images based on the user's answers.",
     tags: ["Lambda", "API Gateway", "DyanmoDB", "Bedrock", "S3", "CloudFront"],
     imageUrl: psytest,
+  },
+  {
+    title: "AWS Pokemon Master",
+    description:
+      "A fully serverless interaction web app that can search and catch pokemon based on PokéAPI.",
+    tags: ["Lambda", "API Gateway", "DynamoDB", "S3", "PokéAPI"],
+    imageUrl: pokemonmaster,
   },
   {
     title: "TPET",
