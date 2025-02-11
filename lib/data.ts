@@ -11,6 +11,7 @@ import tpet from "@/public/tpet.png";
 import tindog from "@/public/tindog.png";
 import TsmcEats from "@/public/TsmcEats.png";
 import llamaindex from "@/public/llamaindex.png";
+import arXivreader from "@/public/arXivreader.png";
 
 export const links = [
   {
@@ -141,6 +142,13 @@ export const projectsData = [
       "API Gateway",
     ],
     imageUrl: tpet,
+  },
+  {
+    title: "arXiv reader",
+    description:
+      "A web app that helps user read arXiv papers in a clean and easy-to-read format.",
+    tags: ["Tailwind", "React", "arXiv API", "Vercel"],
+    imageUrl: arXivreader,
   },
   {
     title: "LlamaIndex Chatbot",
