@@ -12,7 +12,6 @@ import tindog from "@/public/tindog.png";
 import TsmcEats from "@/public/TsmcEats.png";
 import llamaindex from "@/public/llamaindex.png";
 import arXivreader from "@/public/arXivreader.png";
-import { link } from "fs";
 
 export const links = [
   {
@@ -114,7 +113,7 @@ export const projectsData = [
       "OpenAI",
     ],
     imageUrl: gitvatar,
-    link: "",
+    link: "https://gitvatar.chih-han.com/",
   },
   {
     title: "AWS Psychological Test",
@@ -170,7 +169,7 @@ export const projectsData = [
       "NAS",
     ],
     imageUrl: llamaindex,
-    link: "",
+    link: "https://github.com/chungchihhan/llama_index_nextjs",
   },
   {
     title: "TSMC Eats",
@@ -178,7 +177,7 @@ export const projectsData = [
       "A food order website for employees of TSMC. It can handle 100 GET requests and 35 POST requests per second at the peak time.",
     tags: ["MERN", "TypeScript", "Tailwind", "Azure", "Apache JMeter"],
     imageUrl: TsmcEats,
-    link: "",
+    link: "https://github.com/chungchihhan/sushi-restaurant",
   },
   {
     title: "Tindog",
@@ -195,7 +194,7 @@ export const projectsData = [
       "PyTorch",
     ],
     imageUrl: tindog,
-    link: "",
+    link: "https://github.com/kszuyen/A-Dating-App-for-Dogs",
   },
 ] as const;
 
