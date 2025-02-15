@@ -9,6 +9,7 @@ import { useSectionInView } from "@/lib/hooks";
 type ProjectsProps = (typeof projectsData)[number];
 
 export default function Project({
+  link,
   title,
   description,
   tags,
@@ -32,7 +33,10 @@ export default function Project({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden relative sm:h-[22rem] hover:bg-gray-200 transition rounded-lg flex flex-col sm:flex-row items-center gap-2 sm:gap-0 shadow-inner">
+      <a
+        href={link}
+        className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden relative sm:h-[22rem] hover:bg-gray-200 transition rounded-lg flex flex-col sm:flex-row items-center gap-2 sm:gap-0 shadow-inner"
+      >
         <div className="py-4 sm:py-10 px-4 sm:pl-10 w-full sm:w-5/12 flex flex-col h-full">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 ">{description}</p>
@@ -55,7 +59,7 @@ export default function Project({
             className="w-full h-full object-cover rounded-t-lg shadow-2xl transition-transform group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04]"
           />
         </div>
-      </section>
+      </a>
     </motion.div>
   );
 }

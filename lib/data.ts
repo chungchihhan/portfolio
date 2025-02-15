@@ -12,6 +12,7 @@ import tindog from "@/public/tindog.png";
 import TsmcEats from "@/public/TsmcEats.png";
 import llamaindex from "@/public/llamaindex.png";
 import arXivreader from "@/public/arXivreader.png";
+import { link } from "fs";
 
 export const links = [
   {
@@ -113,6 +114,7 @@ export const projectsData = [
       "OpenAI",
     ],
     imageUrl: gitvatar,
+    link: "",
   },
   {
     title: "AWS Psychological Test",
@@ -120,6 +122,7 @@ export const projectsData = [
       "A psychological test that can analyze the personality and generates unique images based on the user's answers.",
     tags: ["Lambda", "API Gateway", "DyanmoDB", "Bedrock", "S3", "CloudFront"],
     imageUrl: psytest,
+    link: "https://psy.aws-educate.tw/",
   },
   {
     title: "AWS Pokemon Master",
@@ -127,6 +130,7 @@ export const projectsData = [
       "A fully serverless interaction web app that can search and catch pokemon based on PokéAPI.",
     tags: ["Lambda", "API Gateway", "DynamoDB", "S3", "PokéAPI"],
     imageUrl: pokemonmaster,
+    link: "https://aws-pokemon-master.chih-han.com/",
   },
   {
     title: "TPET",
@@ -142,6 +146,7 @@ export const projectsData = [
       "API Gateway",
     ],
     imageUrl: tpet,
+    link: "https://tpet.aws-educate.tw/",
   },
   {
     title: "arXiv reader",
@@ -149,6 +154,7 @@ export const projectsData = [
       "A web app that helps user read arXiv papers in a clean and easy-to-read format.",
     tags: ["Tailwind", "React", "arXiv API", "Vercel"],
     imageUrl: arXivreader,
+    link: "https://arxiv-cite.chih-han.com/",
   },
   {
     title: "LlamaIndex Chatbot",
@@ -164,6 +170,7 @@ export const projectsData = [
       "NAS",
     ],
     imageUrl: llamaindex,
+    link: "",
   },
   {
     title: "TSMC Eats",
@@ -171,6 +178,7 @@ export const projectsData = [
       "A food order website for employees of TSMC. It can handle 100 GET requests and 35 POST requests per second at the peak time.",
     tags: ["MERN", "TypeScript", "Tailwind", "Azure", "Apache JMeter"],
     imageUrl: TsmcEats,
+    link: "",
   },
   {
     title: "Tindog",
@@ -187,6 +195,7 @@ export const projectsData = [
       "PyTorch",
     ],
     imageUrl: tindog,
+    link: "",
   },
 ] as const;
 
