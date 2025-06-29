@@ -44,7 +44,7 @@ export default function ThemeToggle() {
 
       <label
         htmlFor="theme-checkbox"
-        className="relative cursor-pointer p-2 focus:outline-none bg-black bg-opacity-10 rounded-full"
+        className="relative cursor-pointer p-1 focus:outline-none bg-black bg-opacity-30 rounded-full"
       >
         <AnimatePresence initial={false} mode="wait">
           {isLight ? (
@@ -55,9 +55,9 @@ export default function ThemeToggle() {
               exit={{ rotate: 90, opacity: 0 }}
               transition={{ duration: 0.25 }}
               viewBox="0 0 24 24"
-              width="20"
-              height="20"
-              className="text-yellow-100"
+              width="18"
+              height="18"
+              className="text-orange-300"
               fill="currentColor"
             >
               <path d="M12 18a6 6 0 100-12 6 6 0 000 12z" />
@@ -71,9 +71,9 @@ export default function ThemeToggle() {
               exit={{ rotate: -90, opacity: 0 }}
               transition={{ duration: 0.25 }}
               viewBox="0 0 24 24"
-              width="20"
-              height="20"
-              className="text-slate-300"
+              width="18"
+              height="18"
+              className="text-yellow-300"
               fill="currentColor"
             >
               <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 1019 13.79 9.05 9.05 0 0121 12.79z" />

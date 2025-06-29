@@ -47,6 +47,7 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item }) => {
           borderRight: "0.4rem solid #9ca3af",
         }}
         date={item.date}
+        dateClassName="text-black dark:text-white transition-colors duration-300"
         icon={item.icon}
         iconStyle={{
           background: "white",

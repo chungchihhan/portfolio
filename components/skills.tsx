@@ -30,16 +30,18 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="bg-white border-[0.1rem] rounded-full px-5 py-3"
+            // className="bg-white border-[0.1rem] rounded-full px-5 py-3 transition-colors"
+            className="
+              bg-white border-[0.1rem] dark:border-neutral-400 rounded-full px-5 py-3
+              transition-shadow duration-300
+              shadow-[0_4px_6px_rgba(251,226,227,0.5),0_4px_6px_rgba(219,215,251,0.5),0_0_15px_rgba(219,215,251,0.3),inset_0_0_10px_rgba(219,215,251,0.2)]
+              dark:shadow-[0_1px_2px_rgba(0,0,0,0.55),0_1px_2px_rgba(0,0,0,0.4),0_0_10px_rgba(0,0,0,0.7),inset_0_0_10px_rgba(0,0,0,0.6)]
+            "
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
-            style={{
-              boxShadow:
-                "0 4px 6px rgba(251, 226, 227, 0.5), 0 4px 6px rgba(219, 215, 251, 0.5), 0 0 15px rgba(219, 215, 251, 0.3), inset 0px 0px 10px rgba(219, 215, 251, 0.2)",
-            }}
           >
             {skill}
           </motion.li>

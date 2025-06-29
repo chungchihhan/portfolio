@@ -31,7 +31,7 @@ export default function Header() {
               <Link
                 href={link.hash}
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 dark:hover:text-gray-500 transition",
                   { "text-gray-950": activeSection === link.name }
                 )}
                 onClick={() => {
@@ -42,7 +42,7 @@ export default function Header() {
                 {link.name}
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gradient-to-b from-[#fbe2e3] to-[#dbd7fb] shadow-lg rounded-full absolute inset-0 -z-10"
+                    className="bg-gradient-to-b from-[#fbe2e3] to-[#dbd7fb] dark:from-slate-400 dark:to-slate-300 shadow-lg rounded-full absolute inset-0 -z-10"
                     layoutId="activeSection"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   ></motion.span>
