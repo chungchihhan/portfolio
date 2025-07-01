@@ -59,10 +59,10 @@ export default function ThemeToggle() {
               exit={{ rotate: 90, opacity: 0 }}
               transition={{ duration: 0.25 }}
               viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="none"
-              stroke="currentColor" // stroke instead of fill keeps it crisp
+              width="20"
+              height="20"
+              fill="currentColor"
+              stroke="currentColor"
               strokeWidth={2}
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -86,12 +86,18 @@ export default function ThemeToggle() {
               exit={{ rotate: -90, opacity: 0 }}
               transition={{ duration: 0.25 }}
               viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              className="text-yellow-300"
+              width="20"
+              height="20"
               fill="currentColor"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-yellow-300"
             >
-              <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 1019 13.79 9.05 9.05 0 0121 12.79z" />
+              <g transform="translate(-1 1)">
+                <path d="M21.71 15.04A9 9 0 1110.96 2.29 7 7 0 0021.71 15.04z" />
+              </g>
             </motion.svg>
           )}
         </AnimatePresence>
