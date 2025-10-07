@@ -66,13 +66,13 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
-        <a
+        <Link
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          href="https://hackmd.io/@chih-han"
+          href="/blogs"
         >
           See my Blogs{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
-        </a>
+        </Link>
         <Link
           className="group bg-white px-7 py-3 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           href="/cv"
