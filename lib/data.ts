@@ -4,6 +4,7 @@ import { FaAws } from "react-icons/fa";
 import { LuBrainCircuit } from "react-icons/lu";
 import { LuGraduationCap } from "react-icons/lu";
 import { BiServer } from "react-icons/bi";
+import { SiTrendmicro } from "react-icons/si";
 import gitvatar from "@/public/gitvatar.png";
 import psytest from "@/public/psytest.png";
 import pokemonmaster from "@/public/pokemonmaster.png";
@@ -95,7 +96,14 @@ export const experiencesData = [
     description:
       "Using microservices to create a fully serverless email system (TPET) for only $15, reducing workload by up to 80%.",
     icon: React.createElement(FaAws),
-    date: "Jan 2025 - present",
+    date: "Jan 2025 - Aug 2025",
+  },
+  {
+    title: "Software Engineer",
+    location: "Trend Micro, Taiwan",
+    description: "Developing and maintaining Deep Discovery Email Inspection.",
+    icon: React.createElement(SiTrendmicro),
+    date: "Oct 2025 - Present",
   },
 ] as const;
 

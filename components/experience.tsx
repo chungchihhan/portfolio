@@ -44,7 +44,7 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item }) => {
           padding: "1.3rem 2rem",
         }}
         contentArrowStyle={{
-          borderRight: "0.4rem solid #9ca3af",
+          borderRight: "0.67em solid #fff",
         }}
         date={item.date}
         dateClassName="text-black dark:text-white transition-colors duration-300"
